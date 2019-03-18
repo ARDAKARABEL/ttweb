@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Docker        | https://www.docker.com/products/docker-desktop
+Docker        | https://www.docker.com
 ETS Container | https://www.docker.com/products/docker-desktop
 ```
 
@@ -22,7 +22,7 @@ A step by step series of examples that tell you how to get environment running.
 Docker Installation
 
 ```
-Download Docker.
+[Download Docker](https://www.docker.com/products/docker-desktop)
 Double-click InstallDocker.msi to run the installer.
 Follow the Install Wizard: accept the license, authorize the installer, and proceed with the install.
 Click Finish to launch Docker.
