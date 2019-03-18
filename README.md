@@ -1,6 +1,6 @@
-# Project Title
+# Employee Tracking System
 
-One Paragraph of project description goes here
+Employee Tracking System enables you to keep track of worker & hours and provide more accurate payroll data.
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+ETS Container
 ```
 
 ### Installing
