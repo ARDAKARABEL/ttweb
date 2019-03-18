@@ -44,10 +44,19 @@ docker run -d -p 80:80 ardakarabel/timetracker:1
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Form Validation Tests
 
-Explain how to run the automated tests for this system
-
+- New Record (Assert False)
+  - Type E-Mail address like abc!abc.com
+  - Leave Start & End Date Time Empty
+  - Leave End Date Empty
+  - Make Start & End Date equal
+  
+- New Record (Assert True)
+  - Select/Type everything in proper format.
+  
+- Search Records
+  - Type E-Mail and search.
 
 ### And coding style tests
 
