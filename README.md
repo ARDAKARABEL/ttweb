@@ -59,7 +59,7 @@ Give an example
 
 ## Built With
 
-* [Spring](https://spring.io/projects/spring-boot) - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+* [Spring Boot](https://spring.io/projects/spring-boot) - Makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Make - Admin Template](https://themeforest.net/item/make-admin-template-builder-html-angularjs/10511387) - Used to generate RSS Feeds
 
