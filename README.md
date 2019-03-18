@@ -21,12 +21,14 @@ A step by step series of examples that tell you how to get environment running.
 
 Docker Installation
 
-[Download Docker](https://www.docker.com/products/docker-desktop)
-Double-click InstallDocker.msi to run the installer.
+```
+Download Docker from https://www.docker.com/products/docker-desktop
+Run the installer.
 Follow the Install Wizard: accept the license, authorize the installer, and proceed with the install.
 Click Finish to launch Docker.
 Docker starts automatically.
 Docker loads a “Welcome” window giving you tips and access to the Docker documentation.
+```
 
 And repeat
 
