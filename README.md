@@ -1,6 +1,6 @@
-# Project Title
+# Employee Tracking System
 
-One Paragraph of project description goes here
+Employee Tracking System enables you to keep track of worker & hours and provide more accurate payroll data.
 
 ## Getting Started
 
@@ -8,81 +8,69 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install to use the software.
 
 ```
-Give examples
+Docker        | https://www.docker.com
+ETS Container | https://www.docker.com/products/docker-desktop
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get environment running.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Docker Installation
 
 ```
-until finished
+Download Docker from https://www.docker.com/products/docker-desktop
+Run the installer.
+Follow the Install Wizard: accept the license, authorize the installer, and proceed with the install.
+Click Finish to launch Docker.
+Docker starts automatically.
+Docker loads a “Welcome” window giving you tips and access to the Docker documentation.
+```
+
+Pull Container
+
+```
+Open command line.
+Execute "docker pull ardakarabel/timetracker" 
+```
+
+Run Application
+```
+docker run -d -p 80:80 ardakarabel/timetracker:1
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Form Validation Tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+- New Record (Assert False)
+  - Type E-Mail address like abc!abc.com
+  - Leave Start & End Date Time Empty
+  - Leave End Date Empty
+  - Make Start & End Date equal
+  
+- New Record (Assert True)
+  - Select/Type everything in proper format.
+  
+- Search Records
+  - Type E-Mail and search.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Spring Boot](https://spring.io/projects/spring-boot) - Makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Make - Admin Template](https://themeforest.net/item/make-admin-template-builder-html-angularjs/10511387) - Admin Template & Builder - HTML & AngularJS
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Arda Karabel** - *Initial work* - [Arda.TK](https://www.arda.tk)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Supplementary Resources
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [Spring MVC form handling example](https://www.mkyong.com/spring-mvc/spring-mvc-form-handling-example/)
+* [Jquery Validations](https://jqueryvalidation.org/)
+* [Docker Documentations](https://docs.docker.com/)
 
