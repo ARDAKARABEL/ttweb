@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install to use the software:
+What things you need to install to use the software.
 
 ```
 Docker        | https://www.docker.com
@@ -30,10 +30,16 @@ Docker starts automatically.
 Docker loads a “Welcome” window giving you tips and access to the Docker documentation.
 ```
 
-And repeat
+Pull Container
 
 ```
-until finished
+Open command line.
+Execute "docker pull ardakarabel/timetracker" 
+```
+
+Run Application
+```
+docker run -d -p 80:80 ardakarabel/timetracker:1
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
