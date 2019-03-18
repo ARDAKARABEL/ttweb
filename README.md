@@ -58,14 +58,6 @@ End with an example of getting some data out of the system or using it for a lit
 - Search Records
   - Type E-Mail and search.
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Built With
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - Makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
