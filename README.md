@@ -12,7 +12,7 @@ What things you need to install to use the software.
 
 ```
 Docker        | https://www.docker.com
-ETS Container | https://www.docker.com/products/docker-desktop
+ETS Container | https://hub.docker.com/r/ardakarabel/timetracker
 ```
 
 ### Installing
@@ -39,7 +39,7 @@ Execute "docker pull ardakarabel/timetracker"
 
 Run Application
 ```
-docker run -d -p 80:80 ardakarabel/timetracker:1
+docker run -d -p 80:80 ardakarabel/timetracker:latest
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
