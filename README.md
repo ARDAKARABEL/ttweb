@@ -11,8 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install to use the software.
 
 ```
-Docker        | https://www.docker.com
-ETS Container | https://hub.docker.com/r/ardakarabel/timetracker
+Docker          | https://www.docker.com
+ETS Container   | https://hub.docker.com/r/ardakarabel/timetracker
+ETS Docker File | https://github.com/ARDAKARABEL/ttweb/blob/master/ets.zip
 ```
 
 ### Installing
@@ -34,7 +35,7 @@ Pull Container
 
 ```
 Open command line.
-Execute "docker pull ardakarabel/timetracker" 
+Execute "docker-compose up" in ets.zip (extracted) 
 ```
 
 Run Application
