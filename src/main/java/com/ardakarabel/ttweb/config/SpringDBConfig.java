@@ -25,7 +25,7 @@ public class SpringDBConfig {
 	public DataSource getDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUrl(TrackRecordConstants.JDBC_URL);
-		dataSource.setUsername("root");
+		dataSource.setUsername("ets-user");
 		dataSource.setPassword("Allianz2019!");
 		return dataSource;
 	}

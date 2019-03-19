@@ -1,0 +1,47 @@
+version: '2.4'
+
+services:
+
+  ets-db:
+    hostname: ets-db
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: 'etsdb'
+      MYSQL_USER: 'ets-user'
+      MYSQL_PASSWORD: 'Allianz2019!'
+      MYSQL_ROOT_PASSWORD: 'Allianz2019!'
+    volumes:
+      - ./datadir:/var/lib/mysql
+      - ./scripts/:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "ets-db"]
+      timeout: 10s
+      retries: 10
+
+  ets-legacy:
+    hostname: ets-legacy
+    restart: always
+    image: alirizasaral/timetracker:1
+    depends_on:
+      ets-db:
+          condition: service_healthy
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: service_healthy
+
+  ets-ws:
+    hostname: ets-ws
+    restart: always
+    image: ardakarabel/timetracker
+    depends_on:
+      ets-legacy:
+        condition: service_started
+    ports:
+      - "80:80"
+#
+
+
