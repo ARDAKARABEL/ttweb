@@ -37,6 +37,7 @@ Pull Container
 Open command line.
 Extract ets.zip where you want to compose the container.
 Execute "docker-compose up" inside this folder.
+Open any web browser and point to http://localhost
 ```
 
 ## Form Validation Tests
