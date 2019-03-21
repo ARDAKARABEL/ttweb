@@ -35,15 +35,9 @@ Pull Container
 
 ```
 Open command line.
-Execute "docker-compose up" in ets.zip (extracted) 
+Extract ets.zip where you want to compose the container.
+Execute "docker-compose up" inside this folder.
 ```
-
-Run Application Alone
-```
-docker run -d -p 80:80 ardakarabel/timetracker:latest
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Form Validation Tests
 
