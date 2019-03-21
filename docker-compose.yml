@@ -4,7 +4,7 @@ services:
 
   ets-db:
     hostname: ets-db
-    image: mysql:latest
+    image: mysql:8.0.15
     restart: always
     ports:
       - "3306:3306"
@@ -12,13 +12,14 @@ services:
       MYSQL_DATABASE: 'etsdb'
       MYSQL_USER: 'ets-user'
       MYSQL_PASSWORD: 'Allianz2019!'
-      MYSQL_ROOT_PASSWORD: 'Allianz2019!'
+      MYSQL_ROOT_PASSWORD: 'Tower2019!'
     volumes:
       - ./datadir:/var/lib/mysql
       - ./scripts/:/docker-entrypoint-initdb.d
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "ets-db"]
-      timeout: 10s
+      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+      interval: 10s
+      timeout: 20s
       retries: 10
 
   ets-legacy:
@@ -27,7 +28,7 @@ services:
     image: alirizasaral/timetracker:1
     depends_on:
       ets-db:
-          condition: service_healthy
+        condition: service_healthy
     ports:
       - "8080:8080"
     healthcheck:
@@ -36,7 +37,7 @@ services:
   ets-ws:
     hostname: ets-ws
     restart: always
-    image: ardakarabel/timetracker
+    image: ardakarabel/timetracker:latest
     depends_on:
       ets-legacy:
         condition: service_started
