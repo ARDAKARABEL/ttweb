@@ -38,7 +38,7 @@ Open command line.
 Execute "docker-compose up" in ets.zip (extracted) 
 ```
 
-Run Application
+Run Application Alone
 ```
 docker run -d -p 80:80 ardakarabel/timetracker:latest
 ```
