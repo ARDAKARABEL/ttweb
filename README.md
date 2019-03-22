@@ -12,7 +12,6 @@ What things you need to install to use the software.
 
 ```
 Docker          | https://www.docker.com
-ETS Container   | https://hub.docker.com/r/ardakarabel/timetracker
 ETS Docker File | https://github.com/ARDAKARABEL/ttweb/raw/master/ets.zip
 ```
 
